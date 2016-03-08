@@ -1,0 +1,46 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>HTML Lists</title>
+  <style>
+    ul,ol,li {
+	   margin: 20px;
+	}
+  </style>
+</head>
+<body>
+  <ul>
+    <li>CPU: Core i5</li>
+    <li>RAM: 16GB</li>
+    <li>OS: Windows 8.1</li>
+	<ul>
+       <li>CPU: Core i5</li>
+       <li>RAM: 16GB</li>
+       <li>OS: Windows 8.1</li>
+       <ul>
+          <li>CPU: Core i5</li>
+          <li>RAM: 16GB</li>
+          <li>OS: Windows 8.1</li>
+       </ul>
+    </ul>
+  </ul>
+  <ol type="I" start="5">
+  <!--<ol type="i" start="5">-->
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+	<li>Item4</li>
+  </ol>
+  <!-- Description List --> 
+  <dl>
+      <dt>CPU:</dt> <!-- Describe term, this can be considered as catogory -->
+      <dd>Core i5</dd>  <!-- Description -->
+      <dd>Pentium i5</dd>  <!-- Description -->
+      <dt>RAM:</dt>
+      <dd>16 GB DDR3</dd>
+      <dt>OS:</dt>
+      <dd>Windows 8.1</dd>  
+  </dl>
+ 
+</body>
+</html>

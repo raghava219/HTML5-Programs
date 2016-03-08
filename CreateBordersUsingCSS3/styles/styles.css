@@ -1,0 +1,165 @@
+body{
+  /* background-color: #B0F0E7; */
+  background-image: url(../images/background.jpg);
+}
+
+.viddesc1{
+  text-align: center;
+  font-family: Segoe, "Segoe UI","DejaVu Sans","Trebuchet MS", Verdana, sans-serif;
+  font-size: bold;
+}
+
+#video1{
+   width: 260px;
+   height: 200px;
+   border: 2px solid #000000;	
+}
+
+#wrapper{
+  width: 900px;
+  height: 800px;
+  margin: 0 auto; /*This will move the div to center*/
+}
+
+#banner{
+  width: 900px;
+  height: 100px;
+  /*background-image: url(../images/Banner.png);*/
+}
+
+#nav{
+  background-color: #000000;
+  width: 900px;
+  height: 50px;
+  display: table;
+}
+
+#contentwrapper{
+  background-color: #b6ff00;
+  width: 900px;
+  height: 750px;  
+}
+
+#content{
+  background-color: #BBB238;
+  width: 590px;
+  height: 720px;
+  float: left;
+  padding: 15px;
+  column-count: 3; /*IE*/
+  -moz-column-count: 3; /*FireFox*/  
+  -webkit-column-count: 3; /*Safari and Chrome*/
+}
+
+#rightpane{
+  background-color: #B7B1D5;
+  width: 250px;
+  height: 720px;
+  float: left;
+  padding: 15px;
+}
+
+#footer{
+  background-color: #808080;
+  width: 900px;
+  height: 100px;
+}
+
+.imgRight{
+  float: right;
+  padding-left: 5px;
+}
+
+.imgLeft{
+  float: left;
+  padding-right: 5px;
+}
+
+a:link{
+  color: #ffffff;
+  text-align: center;
+  font-family: Arial;
+  font-weight: 100px;
+  font-size: 16px;
+}
+
+a:visited{
+  color: #ffffff;
+}
+
+h2{
+   font-family: Segoe, "Segoe UI", "Dejavu Sans","Trebuchet MS", Verdana, sans-serif;
+   font-size: 18px;
+   font-weight: bold;   
+}
+
+p{
+   font-family: Segoe, "Segoe UI", "Dejavu Sans","Trebuchet MS", Verdana, sans-serif;
+   font-size: 12px;  
+}
+
+li{
+   font-family: Segoe, "Segoe UI", "Dejavu Sans","Trebuchet MS", Verdana, sans-serif;
+   font-size: 12px;  
+}
+
+#home{
+  width: 150px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+
+#home:hover{
+  background-color: #ffd800;
+  color: #ffffff;
+}
+
+#faq{
+  width: 150px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+
+#faq:hover{
+  background-color: #ffd800;
+  color: #ffffff;
+}
+
+#about{
+  width: 150px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+
+#about:hover{
+  background-color: #ffd800;
+  color: #ffffff;
+}
+
+#careers{
+  width: 150px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+
+#careers:hover{
+  background-color: #ffd800;
+  color: #ffffff;
+}
+
+#contact{
+  width: 150px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+
+#contact:hover{
+  background-color: #ffd800;
+  color: #ffffff;
+}
+

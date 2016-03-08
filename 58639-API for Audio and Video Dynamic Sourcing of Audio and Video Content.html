@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <title>Audio and Video Dynamic Sourcing of Audio and Video Content</title>
+     <script>
+	     var playing;
+		 var player;
+		 
+		 window.onload = function(){
+		    playing = 0;
+			document.getElementById('next').addEventListener('click',nextSong, false);
+			player = document.getElementById('song');
+		 }
+		 function nextSong(){
+		      if(playing == 0){
+				player.pause();
+				player.src = "dil lutiya.mp3";
+			    player.play();
+				playing = 1;
+			  } else {
+				player.pause();
+				player.src = "Dil Ibadat.mp3";
+			    playing = 0;
+			  }
+		 
+		 }
+	 </script>
+  
+</head>
+<body>
+    <audio controls="controls" preload="preload" id="song">
+	   <source src="dil lutiya.mp3" />
+	</audio><br/>
+	<button id="next">Next</button>
+</body>  
+</html>

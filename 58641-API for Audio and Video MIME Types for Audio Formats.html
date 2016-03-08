@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>MIME Types for Audio Formats</title>
+</head>
+<body>
+    <!-- We specify the MIME type within the type attribute of source element, it is recommended to add MIME type to avoid the confusion -->
+    <audio controls="controls">
+	   <source src="dil lutiya.mp3" type="audio/mp3" />
+	   <!-- Multiple sources can be added under audio element -->
+	   <!-- Firfox does not support mp3 file, so we add below .ogg file-->
+	   <source src="dil lutiya.ogg" type="audio/ogg" />
+	</audio>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Event Object</title>
+  <style>
+        #myDiv{
+		   height: 250px;
+		   width: 200px;
+		   border: 3px solid green;
+		   background-color: rgb(230,230,230);
+		   padding : 3px;
+		}
+  </style> 
+  <script>
+        window.onload = function(){
+		document.getElementById("myDiv").addEventListener('click',processClick,false);
+		}
+		function processClick(event){
+		  //console.log(event);
+		  var output = "";
+		  output += event.timeStamp;
+		  output += " X: " + event.pageX;
+		  output += " Y: " + event.pageY;
+		  document.getElementById('eventInfo').innerHTML = "TimeStamp " + output;
+		}
+  </script>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some test content used to test the Event Object.</p>
+  </div>
+  <div id="eventInfo"></div>
+</body>
+</html>

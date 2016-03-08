@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <title>Header and Footer</title>
+   <style>
+      header {
+	    background-color: rgb(125, 18, 67);
+		color: white;
+		border: 1px solid black;
+		padding: 10px;
+		text-align: center;
+	  }
+      summary{
+	    font-style: italic;
+	  }
+	  detail {
+	     text-align: center;
+		 font-size: .65em;
+		 font-style: italic;
+		 display: block;
+	  }
+	  footer{
+	    background-color: black;
+		color: white;
+		text-align: center;
+	  }
+   </style>
+</head>
+<body>
+  <header>
+     <h1>News from India</h1>
+  </header>
+  <article>
+     <section id="intro">
+	   <h1>Main News</h1>
+	   <summary>All rights reserved. Printed in the United States of America. This publication is protected by copyright, and permission
+		must be obtained from the publisher prior to any prohibited reproduction, storage in a retrieval system, or transmission
+		in any form or by any means, electronic, mechanical, photocopying, recording, or likewise.
+	   </summary>
+	   <p>
+	   It’s legal because it ensures that equal objects have the same hash code. It’s
+atrocious because it ensures that every object has the same hash code. Therefore,
+every object hashes to the same bucket, and hash tables degenerate to linked lists.
+Programs that should run in linear time instead run in quadratic time. For large
+hash tables, this is the difference between working and not working.
+	   </p>
+	   </section>
+	   <p>
+	   It’s legal because it ensures that equal objects have the same hash code. It’s
+atrocious because it ensures that every object has the same hash code. Therefore,
+every object hashes to the same bucket, and hash tables degenerate to linked lists.
+Programs that should run in linear time instead run in quadratic time. For large
+hash tables, this is the difference between working and not working.
+	   </p>
+	 <detail>A good hash function tends to produce unequal hash codes for unequal
+objects. This is exactly what is meant by the third provision of the hashCode contract.
+Ideally, a hash function should distribute any reasonable collection
+	 </detail>
+	 <detail>unequal instances uniformly across all possible hash values. Achieving this ideal
+can be difficult. Luckily it’s not too difficult to achieve a fair approximation. Here
+is a simple recipe:
+	 </detail>
+	 </article>
+	 <aside>
+	    <h2>Points to Remember</h2>
+		<ul>
+		  <li>If the field is a double, compute Double.doubleToLongBits(f), and
+then hash the resulting long as in step</li>
+		  <li>If the field is an object reference and this class’s equals method
+compares the field by recursively invoking equals,</li>
+		  <li>compute a “canonical representation” for this field</li>
+		</ul>
+	 </aside>
+	 <footer>Copyright 2013 | All Rights Reserved</footer>
+  
+</body>
+</html>

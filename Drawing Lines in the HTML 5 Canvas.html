@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+	   <title>Canvas Drawing</title>	
+	   <style>
+	        canvas{
+			  border: 1px solid black;
+			}
+	   </style>
+	   <script> 
+	      window.onload = function()
+		  {
+		     var canvas = document.getElementById('myCanvas');
+			 var context = canvas.getContext('2d');
+			 
+			 context.beginPath();
+			 context.moveTo(100,100);
+			 context.lineTo(300,300);
+			 context.quadraticCurveTo(230,200,250,120);
+			 context.lineTo(370,395);
+			 
+			 context.lineWidth = 5;
+			 context.strokeStyle = "rgb(0,0,225)";
+			 context.stroke();
+			 
+		  }
+	   </script>
+   </head>
+   <body>
+      <canvas id="myCanvas" width="400" height="400" />
+   </body>
+</html>

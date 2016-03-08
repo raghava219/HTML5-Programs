@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+     <meta charset="utf-8"/>
+     <title></title>
+  </head>
+  <body>
+     <p>Understanding a domain lies at the heart of mastering the use of WebLogic Server. WebLogic Server uses the concept of domains to organize the WebLogic Server instances into a coherent group, configure the environment, deploy applications, and implement security across the entire environment. In a typical enterprise-wide deployment of WebLogic Server, you’ll have multiple server instances on various hosts, each possibly running on a different network and with a different configuration. Your domains may have multiple clusters as well as independent Managed Servers. The hosts may belong to various operating systems, and the applications may have to traverse diverse networks. Although the Java EE specification provides standard enterprise APIs for architecting applications, it lets each application server vendor (such as Oracle, for example) implement its application deployment methods, high availability, failover features, and many other administrative procedures using proprietary methods. In fact, these value-added capabilities are how vendors distinguish themselves, and WebLogic Server has the richest set of capabilities among all application servers.</p>
+
+<p>An Oracle WebLogic Server domain is a set of one or more Oracle WebLogic Server instances (and other resources) that work together to serve web applications. Each domain must have a WebLogic Server instance called the Administration Server, or the Admin Server, as it’s usually called. In addition to the Admin Server, you can have one or more Managed Servers in a domain. The Admin Server is really meant for configuration purposes only; it is the Managed Servers that host and run the various web applications. In a development environment, you can keep things simple by having just one server instance in your WebLogic Server domain—the mandatory Admin Server, on which you can deploy your applications. In this case, the single server instance will perform the management and configuration duties, as well as host all the applications. Of course, in a production setup, you must run with multiple management servers, whose job it’ll be to host and run the web applications.</p>
+
+<p>A domain is a grouping of instances, and you can have different groupings of instances depending on the architecture you choose to implement. Just a reminder: WebLogic Server refers to a running Admin or Managed Server as an instance because that’s really what the servers are. Each server (Admin or Managed Server) is an instance of the WebLogic Server and runs in its own Java Virtual Machine (JVM) and with its own configuration.</p>
+
+  </body>
+</html>

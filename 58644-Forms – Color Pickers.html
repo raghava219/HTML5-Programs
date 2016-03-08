@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Color Picker</title>
+  <script>
+       window.onload = function(){
+	   
+	       document.getElementById("color").addEventListener('change',
+		   displayColor,false);
+	   
+	   }
+	   function displayColor(){
+	     
+		 document.getElementById('colorOut').innerHTML =  document.
+		 getElementById('color').value;
+	   
+	   }
+  </script>
+</head>
+
+<body>
+    <form action="#" method="post"> 
+	    <label for="color">Color</label>
+		<input type="color" id="color" />
+		<output id="colorOut" />
+	</form>
+</body>
+
+</html>

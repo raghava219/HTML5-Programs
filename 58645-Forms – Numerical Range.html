@@ -1,0 +1,23 @@
+<DOCTYPE html>
+
+<html>
+<head>
+   <title>Numerical Range</title>
+   <script>
+       window.onload = function()
+	   {
+	      document.getElementById("slider").addEventListener('change',
+	            function(){
+				   document.getElementById('slideOut').innerHTML = document.getElementById('slider').value;
+				}                                             
+                                                             , false);        	    
+	   }                                                      
+   </script>
+</head>
+<body>
+    <form action="#" method="post">
+	   <input id="slider" type="range" min="0" max="100" />
+	   <output id="slideOut">50</output>
+	</form>
+</body>
+</html>

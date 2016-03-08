@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Introduction to Form tag</title> 
+</head>
+<body>
+  <form>
+     <table width="410" height="94" border="0">
+<!-- Start 59745 - Introduction to the FORM Tag -->
+	     <tr>
+		     <td width="108">Name:</td>
+			 <!-- Start 59746,59747 - Modifying Form Field using size, maxlength, name and value attributes -->
+			 <td width="292"><input type="text" size="50" maxlength="50" name="name" value="Enter name"></td>
+			 <!-- Start 59746,59747 - Modifying Form Field using size, maxlength, name and value attributes  -->			 
+		 </tr>
+         <tr>
+		     <td>Email Address:</td>  
+			 <td><input type="text" value="Enter email address" name="email"></td>
+		 </tr>		 
+<!-- End 59745 - Introduction to the FORM Tag -->
+
+<!-- Start 59748 - The Password and Textarea Form fields -->
+         <tr>
+		     <td height="39">Password:</td>
+			 <td><input type="password" name="password" size="20"></td>
+		 </tr>
+		 <tr>
+		     <td height="180" style="vertical-align:text-top;">Comments:</td>
+			 <td><textarea name="comments" value="Enter your comments here(maximum 500 words)" cols="50" rows="10"></textarea></td>
+		 </tr>
+<!-- End 59748 - The Password and Textarea Form fields -->		 
+
+         <tr>
+		     <td height="39">I'm interested in:</td>
+			 <td><p>
+			 <label><input type="checkbox" name="interests" value="checkbox" id="checkbox_0">TV Shows</label>
+			 <label><input type="checkbox" name="interests" value="checkbox" id="checkbox_1">News</label>
+			 <label><input type="checkbox" name="interests" value="checkbox" id="checkbox_2">Sports</label>
+			 <label><input type="checkbox" name="interests" value="checkbox" id="checkbox_3">Movies</label>
+			 </p></td>
+		 </tr>
+         <tr>
+		     <td height="39">Subscribe to Newsletter:</td>
+			 <td>
+			 <p>
+			    <label><input type="radio" name="subscribe" value="radio" id="subscribe_0">Yes</label>
+				<label><input type="radio" name="subscribe" value="radio" id="subscribe_1">No</label>
+			 </p>
+			 </td>
+		 </tr>
+		<tr>
+		   <td height="32" style="vertical-align:top;">Best Time to contact me:</td>
+		   <td>
+		       <select name="interests">
+			     <option value="morning" id="morning">Morning</option>
+				 <option value="afternoon" id="afternoon">Afternoon</option>
+				 <option value="evening" id="evening">Evening</option>
+			   </select>
+		   </td>		   
+		</tr>
+         <tr>
+		     <td><input type="submit" name="submit" value="Click to Submit"></td>
+			 <td><input type="submit" name="submit" formtarget="_blank" value="Submit to a new tab"></td>
+			 <td></td>
+		 </tr>
+	 </table>
+	 <table width="584" height="218" border="0">
+	     <tr><td height="38"><h1>Choices:</h1></td><td></td></tr>  
+		 <!-- Not all browsers support colours -->
+	     <tr>
+		     <td height="27">Please choose a colour :</td>
+			 <td><input type="color" name="color"></td>
+		 </tr>
+		 <!-- Not all browsers support below numbers -->
+		 <tr>
+		     <td>Please choose a number:</td>
+			 <td><input type="number" name="number" min="5"></td>
+		 </tr>
+		 <tr>
+		     <td>Please choose a value from range:</td>
+			 <td><input type="range" value="rangeval"></td>
+		 </tr>
+		 <!-- Not all browsers support below calendar -->
+		 <tr>
+		     <td>Choose a Date:</td>
+			 <td><input type="date" name="date" min="2000-01-01" max="2010-12-31"></td>
+		 </tr>
+		 <tr>
+		     <td><input type="submit" name="submit" value="Submit"></td>
+			 <td></td>
+		 </tr>
+	 </table>
+  </form>
+</body>
+</html> 

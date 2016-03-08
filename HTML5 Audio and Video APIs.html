@@ -1,0 +1,26 @@
+<html>
+  <head>
+  <title>Audio API</title>  
+  <script>
+     var player;
+	 window.onload = function(){
+	    document.getElementById('playButton').addEventListener('click', playMusic, false);
+		document.getElementById('stopButton').addEventListener('click', stopMusic, false);
+		player = document.getElementById('myAudio');
+	 }
+	 function playMusic(){
+	    player.play();
+	 }
+	 function stopMusic(){
+	    player.pause();
+	 }
+  </script>
+  </head>
+  <body>
+    <audio id="myAudio">
+	   <source src="address.mp3" type="audio/mp3"/>
+	</audio>
+	<button id="playButton">Play</button>
+	<button id="stopButton">Stop</button>
+  </body>
+</html>
